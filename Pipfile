@@ -11,8 +11,6 @@ mysql-connector = "*"
 flask-sqlalchemy = "*"
 flask = "*"
 pymysql = "*"
-gunicorn = "*"
-psycopg2 = "*"
 flask-cors = "*"
 
 [requires]
