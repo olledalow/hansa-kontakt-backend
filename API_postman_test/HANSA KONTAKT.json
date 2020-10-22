@@ -1,0 +1,852 @@
+{
+	"info": {
+		"_postman_id": "f441c37c-11c4-42c8-a044-ec3ec9686911",
+		"name": "HANSA KONTAKT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "BOLT",
+			"item": [
+				{
+					"name": "/bolt",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/bolt",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"bolt"
+							]
+						},
+						"description": "This should return a list of shops, each in JSON format."
+					},
+					"response": []
+				},
+				{
+					"name": "/bolt/nev/<nev>",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/bolt/nev/Példa Bolt 8",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"bolt",
+								"nev",
+								"Példa Bolt 8"
+							]
+						},
+						"description": "This eill tryitm pne specific item"
+					},
+					"response": []
+				},
+				{
+					"name": "/bolt/id/<id>",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/bolt/id/38921924",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"bolt",
+								"id",
+								"38921924"
+							]
+						},
+						"description": "This eill tryitm pne specific item"
+					},
+					"response": []
+				},
+				{
+					"name": "/bolt/partnerid/<partnerid>",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/bolt/partnerid/2011068",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"bolt",
+								"partnerid",
+								"2011068"
+							]
+						},
+						"description": "This eill tryitm pne specific item"
+					},
+					"response": []
+				},
+				{
+					"name": "/bolt",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"price\": 15.99\r\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/item/chair",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"item",
+								"chair"
+							]
+						},
+						"description": "Create one item. if item already exists, it will fail"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "VASARLAS",
+			"item": [
+				{
+					"name": "/vasarlas",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:5000/vasarlas/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"vasarlas",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/vasarlas",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:5000/vasarlas/id/66193285",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"vasarlas",
+								"id",
+								"66193285"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/vasarlas/id/<id>",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/vasarlas/id/66193285",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"vasarlas",
+								"id",
+								"66193285"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/vasarlas/esemenydatumido/<esemenydatumido>",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/vasarlas/esemenydatumido/2020-01-02 11:58:53",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"vasarlas",
+								"esemenydatumido",
+								"2020-01-02 11:58:53"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/vasarlas/vasarlasosszeg/<vasarlasosszeg>",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/vasarlas/vasarlasosszeg/3843",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"vasarlas",
+								"vasarlasosszeg",
+								"3843"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/vasarlas/penztargepazonosito/<penztargepazonosito>",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/vasarlas/penztargepazonosito/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"vasarlas",
+								"penztargepazonosito",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/vasarlas/partnerid/<partnerid>",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/vasarlas/penztargepazonosito/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"vasarlas",
+								"penztargepazonosito",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/vasarlas/boltid/<boltid>",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/vasarlas/boltid/2011074",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"vasarlas",
+								"boltid",
+								"2011074"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "CIKKEK",
+			"item": [
+				{
+					"name": "/cikkek",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/cikkek",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"cikkek"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/cikkek",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"999\",\r\n    \"cikkszam\": \"999\",\r\n    \"vonalkod\": \"999\",\r\n    \"nev\": \"teszt cikk\",\r\n    \"mennyisegiegyseg\": \"db\",\r\n    \"nettoegysegar\": 999.999,\r\n    \"verzio\": 999,\r\n    \"partnerid\": 999\r\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/cikkek",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"cikkek"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/cikkek/id/<id>",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/cikkek/id/10409",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"cikkek",
+								"id",
+								"10409"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/cikkek/cikkszam/<cikkszam>",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/cikkek/cikkszam/39182",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"cikkek",
+								"cikkszam",
+								"39182"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/cikkek/vonalkod/<vonalkod>",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/cikkek/vonalkod/5998711388942",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"cikkek",
+								"vonalkod",
+								"5998711388942"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/cikkek/nev/<nev>",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/cikkek/vonalkod/5998711388942",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"cikkek",
+								"vonalkod",
+								"5998711388942"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/cikkek/mennyisegiegyseg/<mennyisegiegyseg>",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/cikkek/mennyisegiegyseg/db",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"cikkek",
+								"mennyisegiegyseg",
+								"db"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/cikkek/nettoegysegar/<nettoegysegar>",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/cikkek/mennyisegiegyseg/db",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"cikkek",
+								"mennyisegiegyseg",
+								"db"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/cikkek/verzio/<verzio>",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/cikkek/mennyisegiegyseg/db",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"cikkek",
+								"mennyisegiegyseg",
+								"db"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/cikkek/partnerid/<partnerid>",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/cikkek/mennyisegiegyseg/db",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"cikkek",
+								"mennyisegiegyseg",
+								"db"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "VASARLAS TETEL",
+			"item": [
+				{
+					"name": "/vasarlas_tetel",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:5000/vasarlas_tetel",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"vasarlas_tetel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/vasarlas_tetel",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 999,\r\n    \"partnerctid\": 999,\r\n    \"vasarlasid\": 999,\r\n    \"mennyiseg\": 99.99,\r\n    \"brutto\": 99.99,\r\n    \"partnerid\": 999\r\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/vasarlas_tetel",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"vasarlas_tetel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/vasarlas_tetel/id/<id>",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/vasarlas_tetel/id/66187970",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"vasarlas_tetel",
+								"id",
+								"66187970"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/vasarlas_tetel/partnerctid/<partnerctid>",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/vasarlas_tetel/partnerctid/20875",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"vasarlas_tetel",
+								"partnerctid",
+								"20875"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/vasarlas_tetel/vasarlasid/<vasarlasid>",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/vasarlas_tetel/vasarlasid/66189974",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"vasarlas_tetel",
+								"vasarlasid",
+								"66189974"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/vasarlas_tetel/mennyiseg/<mennyiseg>",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/vasarlas_tetel/mennyiseg/24",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"vasarlas_tetel",
+								"mennyiseg",
+								"24"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/vasarlas_tetel/brutto/<brutto>",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/vasarlas_tetel/mennyiseg/24",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"vasarlas_tetel",
+								"mennyiseg",
+								"24"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/vasarlas_tetel/partnerid/<partnerid>",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/vasarlas_tetel/partnerid/2011068",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"vasarlas_tetel",
+								"partnerid",
+								"2011068"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "cc02b313-3656-4ec5-9791-ff9c2e720e19",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "1a5c47ae-fcf0-4507-b5f8-98abf49b1986",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
